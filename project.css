@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family:"Noto Sans KR", sans-serif ;
+    src: url(".\font\NotoSansKR-VariableFont_wght.ttf")  format("ttf"); 
+    unicode-range: U+AC00-D7A3;
+}
+@font-face {
+    font-family: "Work Sans";
+    src: url(".\font\WorkSans-VariableFont_wght.ttf") format("ttf");
+    unicode-range: U+0041-005A, U+0061-007A;
+}
+:root{
+    --text:5rem;
+    --subtext:23px;
+    --background-color1:rgba(255,255,255);
+    --font-small:13px;
+    --font-btn:15px;
+    --font-medium:18px;
+    --font-large:25px;
+    --font-big:6.5rem;
+    --text:5rem;
+    --subtext:23px;
+    --font-color:#6c6b69;
+    --font-subcolor:#0b0b0b ;
+    --font-subsubcolor:#b6b5b1;
+    --font-white: #fcfcf7;
+    --font-korea:"Noto Serif KR", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-decoration: none;
+     
+}
+html{
+    width: 100%;  
+    background: #F5F3EE;   
+}
+body{
+    font-family:  "Noto Sans KR " ,"Work Sans" ;
+}
+/*header top*/
+.headertop{
+    box-shadow: 0px 2px 2px #999;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+.index_all{
+    margin-right: 350px;
+    z-index: 100;
+}
+.index_all ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.1rem;
+}
+.index_all ul li{
+    margin: 0 50px;
+    padding: 3px 3px;
+}
+.name_nav,
+.project_nav{
+    padding: 0 15px;
+    color: var(--font-color);
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.index_project .index_hidden{
+    display: none;
+    width: 150px;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-left:10px;
+    background-color: #f5f4ef;
+    border-radius: 20px;
+    
+    
+}
+.index_project .index_hidden li{
+    margin-left: 30px;
+    padding-bottom: 6px;
+    font-size: var(--font-btn);
+}
+.hidden_nav{
+    color: var(--font-subcolor);
+}
+.index_name a:hover,
+.index_project a:hover{
+    transition: 0.2s;
+    color: var(--font-subcolor);
+    text-decoration: underline;
+    text-underline-offset : 6px;
+    text-decoration-thickness:2px ;
+}
+.index_project:hover .index_hidden{
+    display: block;
+}
+.hidden_nav:hover{
+    color: var(--font-white);
+}
+.tooglebtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 30px;
+}
+
+.procedure{ /* 밑으로 내려가는 버튼*/
+    padding: 7px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--font-subcolor);
+    box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    font-size: 13.5px;
+    margin-top: 10px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.btn1{
+    background:#f1c387;
+    border: 1px solid #f1c387;
+}
+.btn1:hover,
+.btn2:hover,
+.btn3:hover{
+    color: var(--font-white);
+}
+.btn2{
+    background:#d37f76ee;
+    border: 1px solid #d37f76ee;
+}
+.btn3{
+    background:#857d7cee ;
+    border: 1px solid #857d7cee;
+}
+  
+/* smart perfume css*/
+.section6_1{
+    height: 65vh;
+}
+.smartperfume_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 100%;
+}
+.smartperfumemain_text{
+    position: relative;
+    left: 14%;
+}
+.smartperfume_text h2{
+    font-size: var(--font-large);
+    color: var(--font-color);
+    margin-bottom: 5px;
+}
+.smartperfume_text p {
+    font-size: var(--font-medium);
+    color: var(--font-color);
+    margin-bottom: 5px;
+}
+.smartperfume_subtext{
+    margin-top: 10px;
+}
+.smartperfume_subtext ul{
+    list-style: none;
+}
+.smartperfume_subtext ul li{
+    margin-bottom: 15px;
+    display: flex;
+}
+.smartperfume_subtext p:nth-child(1){
+    font-size: var(--font-medium);
+    color: var(--font-color);
+    font-weight: 600;
+}
+.smartperfume_subtext p:nth-child(2){
+    font-size: var(--font-medium);
+    color: var(--font-color);
+    margin-left: 20px;
+}
+.phoneimg2_1{
+    width: 165px;
+    height: 300px;
+}
+.perfumeapp2{
+    position: absolute;
+    margin-top: 200px;
+    left: 25%;
+    width: 90px;
+    height: 90px; 
+}
+.design_text{
+    display: flex;
+}
+.design h2,
+.smartperfume_flowchart h2,
+.smartperfume_circuit h2,
+.smartperfume_design h2,
+.smartperfume_userguide h2{
+    text-align: center;
+    font-size: var(--text);
+    color: var(--font-color);
+}
+.design_concept p,
+.smartperfume_flowchart p,
+.smartperfume_circuit p,
+.smartperfume_design p,
+.smartperfume_userguide p{
+    text-align: center;
+    color: var(--font-subcolor);
+    font-size: var(--subtext);
+}
+.design{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.design_text i{
+    font-size: 47px;
+    display: flex;
+    justify-content: center;
+}
+.design_text p{
+    margin: 10px 60px;
+    text-align: center;
+}
+.flowchartimg{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+.circuitimg{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.smartperfume_designimg {
+    margin-top: 50px;
+    margin-left: 30%;
+   
+}
+.smartperfume_designimg img{
+    display: block;
+ 
+     
+}
+.smartperfume_designimg img:nth-child(1){
+    width: 500px; 
+    height: 200px;
+}
+.smartperfume_guide{
+    margin-top: 50px;
+}
+.smartperfume1,
+.smartperfume2,
+.smartperfume3,
+.smartperfume4,
+.smartperfume5{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ 

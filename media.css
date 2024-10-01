@@ -1,0 +1,65 @@
+:root{
+    --media-small:12px;
+    --media-medium:15px;
+    --media-large:20px;
+}
+
+@media screen and (max-width:988px) {
+    .headertop{
+        background: var(--font-white);
+        width: 100%;
+        position: fixed;
+        z-index: 999;
+    }
+    .tooglebtn{
+        cursor: pointer;
+        display: flex;
+    }
+    .index_all{
+        position: absolute;
+        top:68px;
+        display: none;
+        width:100%;
+        height:30vh;
+        background-color:var( --font-white) ;
+        z-index: 50;      
+    }
+   .index_allul{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+   }
+   .index_allul li{
+        width: 100%;
+   }
+   .index_allul li:hover{   
+        background-color: var(--font-subsubcolor);
+   }
+   .index_allul li a:hover{
+        text-decoration: none;
+   }
+   .index_all.active{
+        display: block;
+   }
+   .index_project:hover .index_hidden{
+         display: none;
+    }
+    .section6_1{
+        padding-top: 30px;
+    }
+    .phoneimg2_1{
+        width: 150px;
+        height: 280px;
+    }
+    .perfumeapp2{
+        position: relative;
+        left: -15%;        
+       
+    }
+    .smartperfume_designimg{
+        margin-left: 20%;
+   
+    }
+    
+}
